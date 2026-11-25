@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { WarTabs } from "@/components/WarTabs";
@@ -55,6 +56,7 @@ export default function TimelinePage() {
         </a>
         에 있습니다.
       </p>
+      <NadooAd inline />
       <div className="mt-8">
         <WarTabs
           label="연표 구간"

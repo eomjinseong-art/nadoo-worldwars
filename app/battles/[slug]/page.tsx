@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -49,6 +50,7 @@ export default async function BattlePage({ params }: { params: Promise<{ slug: s
       <p className="mt-2 text-sm text-muted">
         {battle.when} · {battle.front}
       </p>
+      <NadooAd inline />
       <p className="mt-4 text-sm leading-7">{battle.why}</p>
       <dl className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
         <div className="rounded-md border border-line px-3 py-2">

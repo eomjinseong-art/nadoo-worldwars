@@ -1,3 +1,5 @@
+import Script from "next/script";
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -40,9 +42,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className="min-h-screen bg-bg font-sans text-ink antialiased">
         <Header />
-        <main>{children}</main>
+        <main>{children}<NadooAd /></main>
         <Footer />
         <Analytics />
+        <Script src="https://nadoo-ads.vercel.app/ads.js" strategy="afterInteractive" />
       </body>
     </html>
   );

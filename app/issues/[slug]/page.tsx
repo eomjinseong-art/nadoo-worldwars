@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -39,6 +40,7 @@ export default async function IssuePage({ params }: { params: Promise<{ slug: st
       <p className="mt-4 text-xs tracking-[0.16em] text-terra">{item.en}</p>
       <h1 className="mt-1 font-serif text-3xl text-ink sm:text-4xl">{item.title}</h1>
       <p className="mt-2 text-sm text-muted">{item.when}</p>
+      <NadooAd inline />
       <p className="mt-4 text-sm leading-7">{item.why}</p>
       <div className="mt-4 space-y-3 text-sm leading-7">
         {item.body.map((paragraph) => (

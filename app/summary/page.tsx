@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -55,6 +56,7 @@ export default function SummaryPage() {
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "요약" }]} />
       <h1 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">한눈에 요약</h1>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">세 줄은 암기용입니다. 그 아래 문단은 세 줄이 지우는 예외를 되살립니다. 이탈리아와 일본은 두 전쟁에서 같은 편에 서 있지 않습니다.</p>
+      <NadooAd inline />
       <div className="mt-8">
         <WarTabs
           tabs={[

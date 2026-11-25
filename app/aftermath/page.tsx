@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { OutLinks } from "@/components/OutLinks";
@@ -54,6 +55,7 @@ export default function AftermathPage() {
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "전후" }]} />
       <h1 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">결과와 전후 질서</h1>
       <p className="mt-3 text-sm leading-7 text-muted">1차 대전의 마무리는 연맹과 불안정한 강화였고, 2차 대전의 마무리는 유엔과 냉전, 그리고 한반도의 분단이었습니다.</p>
+      <NadooAd inline />
       <div className="mt-8 space-y-8">
         {blocks.map((block) => (
           <section key={block.title}>
