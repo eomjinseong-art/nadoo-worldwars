@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/next";
 const description = `${SITE_TAGLINE}. ${SITE_SUB}`;
 
 export const metadata: Metadata = {
+  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM" },
   metadataBase: new URL(SITE_URL),
   title: { default: `${SITE_NAME} · 1차·2차 세계대전`, template: `%s · ${SITE_NAME}` },
   description,
