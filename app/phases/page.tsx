@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { WarTabs } from "@/components/WarTabs";
@@ -40,6 +41,7 @@ export default function PhasesPage() {
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "시기" }]} />
       <h1 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">시기별 정리</h1>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">각 전쟁을 다섯 시기로 나눕니다. 해는 암기보다, 그 시기에 전선이 어디였는지를 앞에 둡니다.</p>
+      <NadooAd inline />
       <div className="mt-8">
         <WarTabs
           tabs={[

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -31,6 +32,7 @@ export default function IssuesPage() {
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "쟁점" }]} />
       <h1 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">이슈·쟁점</h1>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">전투의 승패와 다른 질문입니다. 각 항목은 왜 그 사건이 두 전쟁의 설명에서 빠지면 안 되는지를 앞에 둡니다.</p>
+      <NadooAd inline />
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">
         {issues.map((item) => (
           <li key={item.slug}>

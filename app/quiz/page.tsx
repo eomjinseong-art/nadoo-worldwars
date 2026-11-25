@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CoupangCard } from "@/components/CoupangCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -20,6 +21,7 @@ export default function QuizPage() {
       <p className="mt-3 text-sm leading-7 text-muted">
         {quiz.length}문제입니다. 고르면 그 문제의 해설이 열리고, 전체 해설로 점수를 볼 수 있습니다. 정답보다 해설의 예외가 공부입니다.
       </p>
+      <NadooAd inline />
       <div className="mt-8">
         <Quiz items={quiz} />
       </div>

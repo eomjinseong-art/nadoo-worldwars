@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -46,6 +47,7 @@ export default async function PersonPage({ params }: { params: Promise<{ slug: s
       <p className="mt-2 text-sm text-muted">
         {person.role} · {person.side} · {person.years}
       </p>
+      <NadooAd inline />
       <p className="mt-4 rounded-md border border-dashed border-line px-3 py-2 text-xs text-muted">초상은 두지 않습니다. 실존 인물의 얼굴을 만들거나, 출처가 불분명한 그림을 붙이지 않습니다.</p>
       <p className="mt-4 text-sm leading-7">{person.why}</p>
       <div className="mt-4 space-y-3 text-sm leading-7">

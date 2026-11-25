@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CoupangCard } from "@/components/CoupangCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -65,6 +66,7 @@ export default function FilmsPage() {
         </a>
         에 있습니다.
       </p>
+      <NadooAd inline />
       <CoupangCard />
       <WarTabs
         tabs={[

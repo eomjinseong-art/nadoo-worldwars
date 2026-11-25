@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -17,6 +18,7 @@ export default function BridgePage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "1차가 2차로", path: "/bridge" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { href: "/summary", label: "요약" }, { label: "1차가 2차로" }]} />
       <p className="mt-4 text-xs tracking-[0.16em] text-terra">1918–1939</p>
+      <NadooAd inline />
       <h1 className="mt-1 font-serif text-3xl text-ink sm:text-4xl">1차 세계대전이 2차를 어떻게 밀어 올렸나</h1>
       <div className="mt-6 space-y-3 text-sm leading-7">
         {bridgeParagraphs.map((paragraph) => (

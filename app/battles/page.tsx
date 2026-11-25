@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -52,6 +53,7 @@ export default function BattlesPage() {
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "전투" }]} />
       <h1 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">주요 전투</h1>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">승패의 한 줄보다, 어느 전선에서 무엇이 바뀌었는지를 적습니다. 관련 영화는 각 전투 안에 붙입니다.</p>
+      <NadooAd inline />
       <div className="mt-8">
         <WarTabs
           tabs={[
